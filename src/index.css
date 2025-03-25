@@ -24,3 +24,11 @@ body{
     width: 105px;
     height: 105px;
 }
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
