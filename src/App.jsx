@@ -75,16 +75,15 @@ function Game(){
   });
 
 
-
   return(
-    <div className='game'>
-      <div className='game-board'>
-        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
-      </div>
-      <div className='game-info'>
-        <ol>{moves}</ol>
-      </div>
-    </div>
+    <div className="flex flex-col items-center p-4 bg-gray-100 min-h-screen md:justify-center md:items-center">
+            <h1 className="text-2xl font-bold mb-4">Tic-Tac-Toe</h1>
+              <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}/>
+            <h2 className="text-xl font-semibold mt-4">History</h2>
+            <ul className="mt-2 w-64 bg-white p-2 shadow-md rounded-md">
+                <ol>{moves}</ol>
+            </ul>
+        </div>
   );
 }
 

@@ -1,16 +1,17 @@
+@import "tailwindcss";
+
 *{
     box-sizing: border-box;
 }
 
 body{
     font-family: sans-serif;
-    margin: 20px;
     padding: 0;
 }
 
 .square{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border: 1px solid black;
     background-color: white;
     font-size: 1.2rem;
@@ -21,8 +22,8 @@ body{
 .Board{
     display: flex;
     flex-wrap: wrap;
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
 }
 
 .game{
